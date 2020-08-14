@@ -11,8 +11,11 @@ function Home() {
                     <li>Documentation</li>
                 </ul>
             </nav>
-            <h1>Budget Calculator</h1>
-            <p>This calculatioin app provides users the ability to input certain perameters to calculate and output a timeframe of when they will be able to afford an item</p>
+
+            <div className="home-page">
+                <h1>Budget Calculator</h1>
+                <p>This calculation app provides users the ability to input certain perameters to calculate and output a timeframe of when they will be able to afford an item</p>
+            </div>
 
         </div>
     )

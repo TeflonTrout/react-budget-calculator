@@ -10,7 +10,7 @@
 }
 
 nav {
-    position: absolute;
+    // position: absolute;
     top: 0;
     width: 100%;
     display: flex;
@@ -21,13 +21,22 @@ nav {
             display: flex;
             padding: 10px 20px;
         }
+        li:hover {
+            background: black;
+            color: white;
+        }
     }
+}
+
+.home-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .calculator {
     width: 100%;
     height: 100vh;
-    display: flex;
     flex-direction: column;
     background: rgb(0,215,144);
     color: white;
