@@ -90,7 +90,7 @@ function Calculator() {
              </form>
 
             <div className="output">
-                <h1>It's only {answer} {unit} before you can make the purchase!</h1>
+                <h1>It's only {answer} {unit}s before you can make the purchase!</h1>
                 <h1>You must save ${amountSaved} per {unit}</h1>
             </div>
         </div>
