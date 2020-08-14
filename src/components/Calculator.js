@@ -13,7 +13,6 @@ function Calculator() {
     const [itemCost, setItemCost] = useState(0);
 
 
-
     const handleSubmit = (e) => {
         e.preventDefault();
 
