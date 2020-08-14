@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Calculator() {
 
     const [timeframe, setTimeframe] = useState('Daily');
-    const [unit, setUnit] = useState('Days');
+    const [unit, setUnit] = useState('Day');
     const [answer, setAnswer] = useState(0);
     const [salary, setSalary] = useState(0);
     const [expenses, setExpenses] = useState(0);
@@ -26,13 +26,13 @@ function Calculator() {
         setAnswer(answer);
 
         if (timeframe == 'Daily') {
-            setUnit('Days');
+            setUnit('Day');
         } else if (timeframe == 'Weekly') {
-            setUnit("Weeks");
+            setUnit("Week");
         } else if (timeframe == 'Monthly') {
-            setUnit("Months");
+            setUnit("Month");
         } else if (timeframe == 'Yearly') {
-            setUnit("Years");
+            setUnit("Year");
         }
 
         console.log(unit);
@@ -55,7 +55,7 @@ function Calculator() {
                     <div className="calc-main">
                         <div className="salary">
                             <p>Calculate salary and expenses on a 
-                            <select onChange={e => setTimeframe(e.target.value)} type='text' name="timeframe" >
+                            <select onChange={e => setTimeframe(e.target.value)} type='text' name="timeframe" className='timeframe-select' >
                                 <option value="Daily">Daily</option>
                                 <option value="Weekly">Weekly</option>
                                 <option value="Monthly">Monthly</option>
@@ -89,8 +89,6 @@ function Calculator() {
                         </div>
                     </div>
              </form>
-
-            
 
             <div className="output">
                 <h1>It's only {answer} {unit} before you can make the purchase!</h1>

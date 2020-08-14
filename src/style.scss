@@ -10,6 +10,8 @@
 }
 
 nav {
+    position: absolute;
+    top: 0;
     width: 100%;
     display: flex;
     background-color: red;
@@ -24,18 +26,64 @@ nav {
 
 .calculator {
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    background: rgb(0,215,144);
+    color: white;
+    background: radial-gradient(circle, rgba(0,215,144,1) 0%, rgba(29,0,179,1) 100%);
     .calculator-form {
         display: flex;
+        color: white;
         flex-direction: column;
         margin-top: 50px;
-        padding: 20px;
-        border-radius: 15px;
-        background-color: blue;
     }
+        .timeframe-select {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid white;
+            color: white;
+        }
+        .timeframe-select:focus {
+            outline: none;
+        }
+        div {
+            margin-top: 5px;
+        }
+        h3 {
+            color: white;
+        }
+        p {
+            margin-bottom: 8px;
+            color: white;
+        }
+        input {
+            color: white;
+            border: none;
+            border-bottom: 2px solid white;
+            background: transparent;
+        }
+        textarea:focus, input:focus {
+            outline: none;
+        } 
+        .submit-btn {
+            border: none;
+            margin-top: 8px;
+            color: red;
+            input {
+                background-color: blue;
+                border: none;
+                color: white;
+                padding: 4px 6px;
+                border-radius: 15px;
+                font-size: 24px;
+                cursor: pointer;
+            }
+        }
+
         .calc-main {
             text-align: center;
+            color: white;
         }
             select {
                 margin-left: 3px;
@@ -47,6 +95,18 @@ nav {
                 }
     h1 {
         display: flex;
-        margin-bottom: 10px;
+        color: white;
+        margin-bottom: 5px;
+    }
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    h1 {
+        margin-bottom: 5px;
     }
 }
