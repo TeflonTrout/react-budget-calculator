@@ -14,7 +14,8 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: red;
+  background-color: #d7009b;
+  color: white;
 }
 
 nav ul {
@@ -24,6 +25,7 @@ nav ul {
 }
 
 nav ul li {
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,8 +33,8 @@ nav ul li {
 }
 
 nav ul li:hover {
-  background: black;
-  color: white;
+  background: white;
+  color: #d7009b;
 }
 
 .home-page {
@@ -53,9 +55,8 @@ nav ul li:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #00d790;
-  color: white;
-  background: radial-gradient(circle, #00d790 0%, #1d00b3 100%);
+  background: #d7009b;
+  background: radial-gradient(circle, #d7009b 0%, #b30000 100%);
 }
 
 .calculator .calculator-form {
@@ -108,11 +109,10 @@ nav ul li:hover {
 .calculator .submit-btn {
   border: none;
   margin-top: 8px;
-  color: red;
 }
 
 .calculator .submit-btn input {
-  background-color: blue;
+  background-color: red;
   border: none;
   color: white;
   padding: 4px 6px;
