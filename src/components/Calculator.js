@@ -44,7 +44,6 @@ function Calculator() {
                 <ul>
                     <Link to='/'><li>Home</li></Link>
                     <Link to='/calculator'><li>Calculator</li></Link>
-                    <Link to='/documentation'><li>Documentation</li></Link>
                 </ul>
             </nav>
 

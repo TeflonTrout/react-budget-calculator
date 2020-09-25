@@ -8,7 +8,6 @@ function Home() {
                 <ul>
                     <Link to='/'><li>Home</li></Link>
                     <Link to='/calculator'><li>Calculator</li></Link>
-                    <li>Documentation</li>
                 </ul>
             </nav>
 
